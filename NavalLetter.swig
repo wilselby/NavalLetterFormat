@@ -10,8 +10,8 @@
 	#include <algorithm>
 	#include <vector>
 	#include <iostream>
-	#include "/opt/DocxFactory/include/WordProcessingCompiler.h"
-	#include "/opt/DocxFactory/include/WordProcessingMerger.h"
+	#include "/app/.heroku/vendor/DocxFactory/include/WordProcessingCompiler.h"
+	#include "/app/.heroku/vendor/DocxFactory/include/WordProcessingMerger.h"
 
 	extern DocxFactory::WordProcessingMerger& initialize(void);
 	extern void print_Reply(DocxFactory::WordProcessingMerger& l_mergerIn, std::string user_SSIC, std::string user_code_serial, std::string user_date);
@@ -34,8 +34,8 @@
 %include std_string.i
 using std::string;
 
-%include "/opt/DocxFactory/include/WordProcessingCompiler.h"
-%include "/opt/DocxFactory/include/WordProcessingMerger.h"
+%include "/app/.heroku/vendor/DocxFactory/include/WordProcessingCompiler.h"
+%include "/app/.heroku/vendor/DocxFactory/include/WordProcessingMerger.h"
 using namespace DocxFactory;
 
 %apply char * {std::string &x};
