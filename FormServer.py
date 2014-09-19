@@ -78,7 +78,7 @@ class FormPageHandler(tornado.web.RequestHandler):
 	#Save output
 	user_fileName = self.get_argument('Filename')
 	NavalLetter.save_Output(l_MergerIn, str(user_fileName))
-	fileName = "/home/wilselby/Dropbox/DocX/Final/static/" + user_fileName + ".docx"
+	fileName = "/home/ubuntu/NavalLetterFormat/static/" + user_fileName + ".docx"
 	fullFile = user_fileName + ".docx"
 	#print fileName
 

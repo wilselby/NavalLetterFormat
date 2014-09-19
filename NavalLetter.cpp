@@ -21,8 +21,8 @@
 #include <algorithm>
 #include <vector>
 #include <iostream>
-#include "WordProcessingCompiler.h"
-#include "WordProcessingMerger.h"
+#include "/home/ubuntu/DocxFactory/include/WordProcessingCompiler.h"
+#include "/home/ubuntu/DocxFactory/include/WordProcessingMerger.h"
 #include <sstream>
 
 using namespace DocxFactory;
@@ -53,7 +53,7 @@ DocxFactory::WordProcessingMerger& initialize(void){
 		//l_compiler.compile("/home/wilselby/Dropbox/DocX/Final/NavalLetterTemplate.docx","/home/wilselby/Dropbox/DocX/Final/NavalLetterTemplate.dfw");
         
 		//Load DFW file
-		l_merger.load("/home/wilselby/Dropbox/DocX/Final/NavalLetterTemplate.dfw");
+		l_merger.load("/home/ubuntu/NavalLetterFormat/NavalLetterTemplate.dfw");
 
 	return l_merger;
 
@@ -252,7 +252,7 @@ void print_Sig(DocxFactory::WordProcessingMerger& l_mergerIn, std::string user_s
 void save_Output(DocxFactory::WordProcessingMerger& l_mergerIn, std::string user_fileName){
 
         //Save Output File
-	std::string filePath = "/home/wilselby/Dropbox/DocX/Final/static/";
+	std::string filePath = "/home/ubuntu/NavalLetterFormat/static/";
 	std::string fileType = ".docx";
 	//std::string rand = convertInt(rand());
 	std::string fileName = filePath + user_fileName + fileType;
