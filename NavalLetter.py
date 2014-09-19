@@ -21,9 +21,6 @@ if version_info >= (2,6,0):
             return _NavalLetter
         if fp is not None:
             try:
-                print fp
-                print pathname
-                print description
                 _mod = imp.load_module('_NavalLetter', fp, pathname, description)
             finally:
                 fp.close()
