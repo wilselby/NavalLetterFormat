@@ -6,7 +6,7 @@
 	#include <time.h>
 	#include <string>
 	#include <cctype>
-	#include <stdio>
+	#include <stdio.h>
 	#include <algorithm>
 	#include <vector>
 	#include <iostream>
